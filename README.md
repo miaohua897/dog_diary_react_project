@@ -1,3 +1,25 @@
+
+This is a practice exercise.
+
+The page is a dog diary. For now, it is without CSS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
