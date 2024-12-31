@@ -8,11 +8,13 @@ const Diary =()=>{
             <h1>My Diary</h1>
             <ul>
                 {
-                    diaryData.map((el,index)=>(
+                    diaryData.map((el)=>(
                         <li
                         key ={el.id}
                         >
-                        {el.name}
+                       <h3>{el.name}</h3> 
+                        <br></br>
+                        {el.date}
                         <br></br>
                         {el.diary}
                         </li>
