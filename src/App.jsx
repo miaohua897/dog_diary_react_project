@@ -1,6 +1,7 @@
 // src/App.jsx
 
 import AboutMe from "./component/AboutMe";
+import ShowCase from "./component/ShowCase";
 
 function App() {
 
@@ -12,6 +13,7 @@ const handleCick =()=>{
   return (
     <div>
           <h1> Dog Diary </h1>
+          <ShowCase />
           <AboutMe clicker={handleCick}/>
     </div>
  )
