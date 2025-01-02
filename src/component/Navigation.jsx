@@ -32,6 +32,11 @@ function Navigation(){
                         My New Diary 
                         </NavLink>
                     </li> */}
+                                        <li>
+                        <NavLink to ='/heathtracking'>
+                        Heath Tracking
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
         </div>
