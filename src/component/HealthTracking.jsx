@@ -1,16 +1,36 @@
 import {useState,useEffect} from 'react';
+import { useHealthTracking}  from '../context/HealthTrackingContext';
+import { useNavigate } from "react-router-dom";
 function HealthTracking(){
+    const navigate = useNavigate();
+     const {newRecord,setNewRecord } = useHealthTracking();
     const today = new Date();
      const [date,setDate] = useState(today.toString());
      const [event,setEvent] = useState('');
      const [eventType,setEventType] =useState('');
+     const handleSubmit=(e)=>{
+        e.preventDefault();
+        const obj ={};
+        obj.date=date;
+        obj.event =event;
+        obj.eventType=eventType;
+        setNewRecord(obj);
+        const now = new Date();
+        setDate(now.toString());
+        setEvent('');
+        setEventType('');
+        if(obj.eventType==='Daily')  navigate('/heathtracking/dailyrecord');
+        if(obj.eventType === '') return ;
+        if(obj.eventType ==='Medical') navigate('/healthtracking/medicalrecord');
+     }
     return (
         <div>
             <h1>Health Tracking</h1>
-            <p>{date}</p>
-            <p>{event}</p>
+            {/* <p>{newRecord.date}</p>
+            <p>{newRecord.event}</p>
+            <p>{newRecord.eventType}</p> */}
             <form 
-            // onSubmit={onSubmit}
+            onSubmit={handleSubmit}
             >
                 <div>
                 <label htmlFor='date'>Date</label>

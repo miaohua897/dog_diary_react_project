@@ -8,6 +8,8 @@ import NewDiaryShow from './component/NewDiaryShow';
 import { BrowserRouter as Router, Routes, Route,NavLink } from 'react-router-dom';
 import Navigation from "./component/Navigation";
 import HealthTracking from './component/HealthTracking';
+import DailyRecord from './component/DailyRecord';
+import MedicalRecord from './component/MedicalRecord.jsx';
 
 function App() {
 
@@ -29,6 +31,8 @@ const handleCick =()=>{
                  <Route path ='/newdiary' element ={ <NewDiary />}/>
                  <Route path = '/newdiaryshow' element={ <NewDiaryShow />}/>
                  <Route path ='/heathtracking' element ={<HealthTracking />} />
+                 <Route path = '/heathtracking/dailyrecord' element={<DailyRecord />}/>
+                 <Route path ='/healthtracking/medicalrecord' element={MedicalRecord} />
               </Route>
             </Routes>
           </Router>
