@@ -4,6 +4,7 @@ import AboutMe from "./component/AboutMe";
 import Diary from "./component/Diary";
 import ShowCase from "./component/ShowCase";
 import NewDiary from "./component/NewDiary";
+import NewDiaryShow from './component/NewDiaryShow';
 
 function App() {
 
@@ -19,6 +20,7 @@ const handleCick =()=>{
           <AboutMe clicker={handleCick}/>
           <Diary />
           <NewDiary />
+          <NewDiaryShow />
     </div>
  )
 }

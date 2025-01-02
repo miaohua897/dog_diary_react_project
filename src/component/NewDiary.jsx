@@ -1,10 +1,10 @@
 import { useState } from "react";
-
+import {useNewDiary} from "../context/NewDiaryContext";
 
 function NewDiary (){
 
+    const { newDiary, setNewDiary}= useNewDiary();
     const [value,setValue] = useState('');
-  
     const today = new Date();
     const [info,setInfo] =useState({
         date:'',
@@ -19,6 +19,7 @@ function NewDiary (){
         newobj.date = date;
         newobj.value =value;
         setInfo(newobj);
+        setNewDiary(newobj);
         // console.log(date,value,newobj,info);
         setValue('');
        
@@ -37,6 +38,7 @@ function NewDiary (){
       <h2>New Diary</h2>
       <p>{info.date}</p>
       <p>{info.value}</p>
+      {/* <p>{"Context"+newDiary.value}</p> */}
       <label>
       <input
         type = 'text'
