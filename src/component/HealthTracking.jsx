@@ -2,10 +2,13 @@ import {useState,useEffect} from 'react';
 function HealthTracking(){
     const today = new Date();
      const [date,setDate] = useState(today.toString());
+     const [event,setEvent] = useState('');
+     const [eventType,setEventType] =useState('');
     return (
         <div>
             <h1>Health Tracking</h1>
             <p>{date}</p>
+            <p>{event}</p>
             <form 
             // onSubmit={onSubmit}
             >
@@ -16,6 +19,7 @@ function HealthTracking(){
                 type = 'text'
                 onChange={e=>setDate(e.target.value)}
                 value = {date}
+                style={{width:500}}
                 />
                 </div>
 
@@ -24,13 +28,16 @@ function HealthTracking(){
                 <input 
                 id = 'event'
                 type = 'text'
-                // onChange
-                // value = {date}
+                onChange={e=>setEvent(e.target.value)}
+                value = {event}
+                style={{height:200,width:500}}
                 />
                 </div>
 
                 <select 
                 name = "eventType"
+                onChange={e=>setEventType(e.target.value)}
+                value={eventType}
                 >
                     <option value =''>
                         Select an event type...
