@@ -23,7 +23,7 @@ const handleCick =()=>{
             <Routes>
               <Route>
                 <Route path ='/' element ={<AboutMe clicker={handleCick}/>}/>
-                 <Route path = '/showcase' element={   <ShowCase />}/>
+                 {/* <Route path = '/showcase' element={   <ShowCase />}/> */}
                  <Route path ='/diary' element = { <Diary />}/>
                  <Route path ='/newdiary' element ={ <NewDiary />}/>
                  <Route path = '/newdiaryshow' element={ <NewDiaryShow />}/>

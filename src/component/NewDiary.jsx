@@ -1,8 +1,10 @@
 import { useState } from "react";
 import {useNewDiary} from "../context/NewDiaryContext";
+import { useNavigate } from "react-router-dom";
 
 function NewDiary (){
 
+    const navigate = useNavigate();
     const { newDiary, setNewDiary}= useNewDiary();
     const [value,setValue] = useState('');
     const today = new Date();
@@ -22,7 +24,7 @@ function NewDiary (){
         setNewDiary(newobj);
         // console.log(date,value,newobj,info);
         setValue('');
-       
+        navigate('/newdiaryshow');
     }
     const handleValue=(e)=>{
  const newvalue = e.target.value;

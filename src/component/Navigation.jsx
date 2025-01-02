@@ -12,11 +12,11 @@ function Navigation(){
                         Home
                         </NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink to ='/showcase'>
                         ShowCase
                         </NavLink>
-                    </li>
+                    </li> */}
                     <li>
                         <NavLink to ='/diary'>
                         Diary
@@ -27,11 +27,11 @@ function Navigation(){
                         New Diary
                         </NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink to ='/newdiaryshow'>
                         My New Diary 
                         </NavLink>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
         </div>
