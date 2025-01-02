@@ -20,8 +20,8 @@ function HealthTracking(){
         setEvent('');
         setEventType('');
         if(obj.eventType==='Daily')  navigate('/heathtracking/dailyrecord');
-        if(obj.eventType === '') return ;
         if(obj.eventType ==='Medical') navigate('/healthtracking/medicalrecord');
+        if(obj.eventType === '') return ;
      }
     return (
         <div>

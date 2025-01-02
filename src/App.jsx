@@ -32,7 +32,7 @@ const handleCick =()=>{
                  <Route path = '/newdiaryshow' element={ <NewDiaryShow />}/>
                  <Route path ='/heathtracking' element ={<HealthTracking />} />
                  <Route path = '/heathtracking/dailyrecord' element={<DailyRecord />}/>
-                 <Route path ='/healthtracking/medicalrecord' element={MedicalRecord} />
+                 <Route path ='/healthtracking/medicalrecord' element={<MedicalRecord />} />
               </Route>
             </Routes>
           </Router>
