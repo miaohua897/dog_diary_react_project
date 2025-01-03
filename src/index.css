@@ -32,6 +32,13 @@ h1{
 }
 .showCase p{
     font-size: 20px;
-    
 
+
+}
+.myfavoriteperson{
+    height: 40px;
+    border-radius: 15px;
+    color:darkslategray;
+    font-weight: bold;
+    box-shadow: 10px 10px 5px ;
 }

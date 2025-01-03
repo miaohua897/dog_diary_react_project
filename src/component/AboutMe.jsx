@@ -21,7 +21,7 @@ const AboutMe =({clicker})=>{
                 </tbody>
             </table>
           
-            <button onClick ={clicker}>My favorite person</button>
+            <button className='myfavoriteperson' onClick ={clicker}>My favorite person</button>
            
     </div>
   
