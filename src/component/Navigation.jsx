@@ -3,42 +3,45 @@ import {NavLink} from 'react-router-dom';
 function Navigation(){
 
     return (
-        <div>
-            <h2>Nav Bar</h2>
-            <nav>
-                <ul>
-                    <li>
+        <div className='NavBar'>
+            {/* <h2>Nav Bar</h2> */}
+            <div >
+            <nav >
+                <ul className ='navigationBar'>
+                    <p>
                         <NavLink to ='/'>
                         Home
                         </NavLink>
-                    </li>
+                    </p>
                     {/* <li>
                         <NavLink to ='/showcase'>
                         ShowCase
                         </NavLink>
                     </li> */}
-                    <li>
+                    <p>
                         <NavLink to ='/diary'>
                         Diary
                         </NavLink>
-                    </li>
-                    <li>
+                    </p>
+                    <p>
                         <NavLink to ='/newdiary'>
                         New Diary
                         </NavLink>
-                    </li>
+                    </p>
                     {/* <li>
                         <NavLink to ='/newdiaryshow'>
                         My New Diary 
                         </NavLink>
                     </li> */}
-                                        <li>
+                    <p>
                         <NavLink to ='/heathtracking'>
                         Heath Tracking
                         </NavLink>
-                    </li>
+                    </p>
                 </ul>
             </nav>
+            </div>
+  
         </div>
     )
 

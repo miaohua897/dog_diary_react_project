@@ -1,3 +1,25 @@
 body{
     background: url('./images/background.png');
 }
+h1{
+    text-align: center;
+}
+.NavBar{
+    display: flex;
+    flex-direction: column;
+}
+.navigationBar{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: center;
+    gap:30px;
+}
+.navigationBar p{
+    font-size: 24px;
+ 
+}
+.navigationBar p a{
+    text-decoration: none;
+    color:darkblue
+}
