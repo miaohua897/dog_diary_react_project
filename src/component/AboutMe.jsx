@@ -7,17 +7,23 @@ const AboutMe =({clicker})=>{
           <div className="MyFavorite">
           <table className='MyFavoriteTable'>
             <tbody>
-                <tr>
-                    <td>my friends</td>
-                    <td>poooop</td>
+                <tr >
+                    <td className="MyFavoriteTableGrid" id="MFTgrid"
+                   style={{ borderRight: '2px dashed white' }}
+                    >my friends</td>
+                    <td className="MyFavoriteTableGrid" id="MFTgrid">poooop</td>
                 </tr>
-                <tr>
-                    <td>my favorite food</td>
-                    <td>homemade beef</td>
+                <tr >
+                    <td className="MyFavoriteTableGrid" id="MFTgrid"
+                     style={{ borderRight: '2px dashed white' }}
+                    >my favorite food</td>
+                    <td className="MyFavoriteTableGrid" id="MFTgrid">homemade beef</td>
                 </tr>
-                <tr>
-                    <td>my favorite drink</td>
-                    <td>homemade chicken soup</td>
+                <tr >
+                    <td id="MFTgrid" 
+                     style={{ borderRight: '2px dashed white' }}
+                    >my favorite drink</td>
+                    <td id="MFTgrid">homemade chicken soup</td>
                 </tr>
                 </tbody>
             </table>

@@ -54,3 +54,12 @@ h1{
     width: 600px;
     height: 100px;
 }
+.MyFavoriteTableGrid{
+    border-bottom:2px dashed white;
+    /* text-align: center; */
+}
+#MFTgrid{
+    text-align: center; 
+    font-family: fantasy;
+    font-weight: bold;
+}
