@@ -2,9 +2,10 @@ import ShowCase from "./ShowCase";
 
 const AboutMe =({clicker})=>{
  return (
-    <div>
+    <div >
           <ShowCase />
-            <table>
+          <div className="MyFavorite">
+          <table className='MyFavoriteTable'>
             <tbody>
                 <tr>
                     <td>my friends</td>
@@ -23,6 +24,8 @@ const AboutMe =({clicker})=>{
           
             <button className='myfavoriteperson' onClick ={clicker}>My favorite person</button>
            
+          </div>
+         
     </div>
   
  )
