@@ -1,5 +1,5 @@
 import ShowCase from "./ShowCase";
-
+import LikeIconClass from './LikeIconClass';
 const AboutMe =({clicker})=>{
  return (
     <div >
@@ -29,7 +29,7 @@ const AboutMe =({clicker})=>{
             </table>
           
             <button className='myfavoriteperson' onClick ={clicker}>My favorite person</button>
-           
+           < LikeIconClass />
           </div>
          
     </div>
