@@ -3,9 +3,9 @@ This is a practice exercise.
 
 The page is a dog diary. For now, it is without CSS.
 
+Dec. I began to write the dog diary project.
 
-
-
+Jan 4th, I changed the project to frontend
 
 
 
